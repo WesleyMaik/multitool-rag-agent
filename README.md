@@ -7,17 +7,17 @@ An end-to-end practical guide and implementation of Retrieval-Augmented Generati
 ```markdown
 .
 │
-├── data/ # Local PDF knowledge bases
-│ ├── agriculture.pdf # Agricultural domain document
-│ ├── dengue.pdf # Dengue fever health document
+├── data/                                         # Local PDF knowledge bases
+│ ├── agriculture.pdf                             # Agricultural domain document
+│ ├── dengue.pdf                                  # Dengue fever health document
 │ └── m2m_strategy_and_objectives_development.pdf # NASA Moon to Mars strategy
 │
-├── multi-tool-rag-agent-project.ipynb # Main tutorial notebook
-├── pyproject.toml # Project metadata and PEP 621 dependencies (uv / pip compatible)
-├── requirements.txt # Standard pip requirements
-├── .env.example # Environment variable template
-├── .gitignore # Git ignore configuration
-└── README.md # Project documentation
+├── multi-tool-rag-agent-project.ipynb            # Main tutorial notebook
+├── pyproject.toml                                # Project metadata and PEP 621 dependencies (uv / pip compatible)
+├── requirements.txt                              # Standard pip requirements
+├── .env.example                                  # Environment variable template
+├── .gitignore                                    # Git ignore configuration
+└── README.md                                     # Project documentation
 ```
 
 ## Features
