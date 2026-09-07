@@ -1,24 +1,24 @@
-﻿# Multi-Tool RAG & Stateful AI Agents with LangChain and LangGraph
+# Multi-Tool RAG & Stateful AI Agents with LangChain and LangGraph
 
 An end-to-end practical guide and implementation of Retrieval-Augmented Generation (RAG) and stateful multi-tool conversational agents using LangChain, LangGraph, Groq, and Hugging Face embeddings.
 
 ## Project Structure
 
-`	ext
+```markdown
 .
 │
-├── data/                                             # Local PDF knowledge bases
-│   ├── agriculture.pdf                               # Agricultural domain document
-│   ├── dengue.pdf                                    # Dengue fever health document
-│   └── m2m_strategy_and_objectives_development.pdf   # NASA Moon to Mars strategy
+├── data/ # Local PDF knowledge bases
+│ ├── agriculture.pdf # Agricultural domain document
+│ ├── dengue.pdf # Dengue fever health document
+│ └── m2m_strategy_and_objectives_development.pdf # NASA Moon to Mars strategy
 │
-├── multi-tool-rag-agent-project.ipynb                # Main tutorial notebook
-├── pyproject.toml                                    # Project metadata and PEP 621 dependencies (uv / pip compatible)
-├── requirements.txt                                  # Standard pip requirements
-├── .env.example                                      # Environment variable template
-├── .gitignore                                        # Git ignore configuration
-└── README.md                                         # Project documentation
-`
+├── multi-tool-rag-agent-project.ipynb # Main tutorial notebook
+├── pyproject.toml # Project metadata and PEP 621 dependencies (uv / pip compatible)
+├── requirements.txt # Standard pip requirements
+├── .env.example # Environment variable template
+├── .gitignore # Git ignore configuration
+└── README.md # Project documentation
+```
 
 ## Features
 
@@ -40,14 +40,16 @@ An end-to-end practical guide and implementation of Retrieval-Augmented Generati
 ### 2. Installation
 
 Using uv:
-`ash
+
+```bash
 uv venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 uv pip install -e .
-`
+```
 
 Or using standard pip:
-`ash
+
+```bash
 python -m venv .venv
 # On Windows:
 .venv\Scripts\activate
@@ -55,16 +57,19 @@ python -m venv .venv
 source .venv/bin/activate
 
 pip install -r requirements.txt
-`
+```
 
 ### 3. Environment Configuration
 
 Copy the sample environment file and set your credentials:
-`ash
+
+```bash
 cp .env.example .env
-`
+```
+
 Edit .env:
-`env
+
+```env
 # Required
 GROQ_API_KEY=your_groq_api_key_here
 GROQ_MODEL=openai/gpt-oss-20b
@@ -72,7 +77,7 @@ GROQ_MODEL=openai/gpt-oss-20b
 # Optional
 HF_TOKEN=your_huggingface_token_here
 HUGGINGFACE_MODEL=mixedbread-ai/mxbai-embed-large-v1
-`
+```
 
 > [!NOTE]
 > GROQ_MODEL and HUGGINGFACE_MODEL are optional. If not set, the notebook automatically falls back to openai/gpt-oss-20b and mixedbread-ai/mxbai-embed-large-v1.
@@ -80,8 +85,9 @@ HUGGINGFACE_MODEL=mixedbread-ai/mxbai-embed-large-v1
 ### 4. Running the Notebook
 
 Start Jupyter Notebook or JupyterLab:
-`ash
+
+```bash
 jupyter notebook multi-tool-rag-agent-project.ipynb
-`
+```
 
 You can also run this notebook directly in Google Colab: Colab secrets (userdata.get(...)) are automatically detected.
