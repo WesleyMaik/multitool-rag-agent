@@ -1,5 +1,5 @@
 ﻿[project]
-name = "langchain-rag-agents"
+name = "multitool-rag-agent"
 version = "0.1.0"
 description = "Multi-tool RAG and conversational AI agents built with LangChain and LangGraph"
 readme = "README.md"
